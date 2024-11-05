@@ -23,7 +23,7 @@ body {
     border-radius: 8px;
   }
   .border-custom::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -18px;
     right: 36px;
@@ -31,4 +31,8 @@ body {
     border-style: solid;
     border-color: transparent transparent #fff transparent;
   }
+}
+
+.height-custom {
+  min-height: calc(100vh - 155px);
 }

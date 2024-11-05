@@ -25,7 +25,7 @@ const CartPage = () => {
   const dispatch = useDispatch<AppDispatch>();
   if (carts.length === 0) {
     return (
-      <div className="my-5 flex flex-col items-center gap-4">
+      <div className="my-3 flex flex-col items-center gap-4 height-custom ">
         <div className="size-[120px]">
           <img src={shopping} alt="" className="size-full object-contain" />
         </div>
@@ -37,7 +37,7 @@ const CartPage = () => {
     );
   }
   return (
-    <div className="mx-auto my-3 max-w-[1200px] bg-white">
+    <div className="mx-auto my-3 max-w-[1200px] bg-white height-custom ">
       <div className="grid grid-cols-4">
         <div className="col-span-3">
           <Table>

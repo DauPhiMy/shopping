@@ -52,7 +52,7 @@ const ProductSinglePage = () => {
     });
   };
   return (
-    <div className="mx-auto my-3 max-w-[1200px] bg-white">
+    <div className="height-custom mx-auto my-3 max-w-[1200px] bg-white">
       {loading ? (
         <Loading />
       ) : (
