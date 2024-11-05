@@ -38,7 +38,7 @@ const Cart = () => {
                   />
                 </div>
                 <p className="line-clamp-1 flex-1">{item.title}</p>
-                <span className="w-[60px] text-right">{item.price} $</span>
+                <span className="w-[70px] text-right">{item.price} $</span>
               </Link>
             ))}
             <div className="mx-2 my-2 flex flex-row-reverse">

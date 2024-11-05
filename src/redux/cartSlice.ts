@@ -58,11 +58,11 @@ export const cartSlice = createSlice({
       const index = state.carts.findIndex(
         (item) => item.id === action.payload.id,
       );
-      if (state.carts[index].quantity >= 1) {
+      if (state.carts[index].quantity > 1) {
         state.carts[index].quantity += action.payload.quantity;
         setCartLocalStorage(state.carts);
       } else {
-        state.carts[index].quantity = 1;
+        state.carts[index].quantity += 1;
         setCartLocalStorage(state.carts);
       }
     },

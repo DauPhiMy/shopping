@@ -43,7 +43,7 @@ const CartPage = () => {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>Sản Phẩm</TableHead>
+                <TableHead className="w-[400px]">Sản Phẩm</TableHead>
                 <TableHead>Số lượng</TableHead>
                 <TableHead className="w-[100px]">Giá</TableHead>
               </TableRow>
@@ -58,7 +58,7 @@ const CartPage = () => {
                         alt=""
                         className="size-20 object-contain"
                       />
-                      <div>{item.title}</div>
+                      <p className="font-medium text-base line-clamp-3">{item.title}</p>
                     </div>
                   </TableCell>
                   <TableCell className="text-center">
@@ -115,7 +115,7 @@ const CartPage = () => {
         <div className="col-span-1">
           <div className="flex flex-col items-center gap-4 px-4 py-2">
             <div>
-              <span className="pr-2">Tổng giá trị:</span>
+              <span className="pr-2 font-medium">Tổng giá trị:</span>
               {carts
                 .reduce((acc, item) => {
                   return acc + item.price * item.quantity;
